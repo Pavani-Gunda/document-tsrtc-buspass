@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="./response.html" enctype="multipart/form-data">
+        <fieldset>
+        <CENTER>
+            <img src="./image.jfif" alt width="50">
+        </CENTER>
+        <center>
+            <h1>
+                <b>TELANGANA STATE ROAD TRANSPORT CORPORTATION</b>
+            </h1>
+        </center>
+         <center>
+            <h2>
+                <b>
+                    General Bus Pass Application
+                </b>
+            </h2>
+        </center></fieldset>
+        <fieldset>
+            <legend>
+                <b>
+                    Applicant Details>
+                </b>
+            </legend>
+            <label for="name">Name</label>
+            <input type="text"id="name" name="Name"required="[a-z]+"title="multiple characters from b-w a-z">
+            <br>
+            <br>
+            <label for="Father'/Guardian'sname">Father'/Guardian'sname</label>
+            <input type="text"name="Father's/Guardian'name"required pattern="[a-z]+"title="multiple characters from b-w a-z">
+            
+            <br>
+            <br>
+           
+                <label for="Date Of Birth">Date Of Birth</label>
+                <input type="datetime-local"required>
+                <br>
+                <br>
+                <label for="Gender:">Gender:</label>
+                <input type="radio"id="female"name="gender"value="female">
+                <label for="female">female</label>
+                <input type="radio"id="male"name="gender"value="male">
+                <label for="male">male</label>
+                <br>
+                <label for="Aadhar Number">Aadhar Number</label>
+                <input type="text"name="Aadhar Number"required pattern="[0-9]{12}"title="multiple characters b-w0-9">
+                <br>
+                <label for="Whatsapp Number">Whatsapp Number</label>
+                <input type="text"name="whatsapp number"required pattern="\+91[9786][0-9]{9}"title="multiple numbers">
+                <br>
+                <label for="email id">Email ID:</label>
+                <input type="text"name="email id"required pattern="[a-zA-Z0-9]+@gmail\.com|[a-zA-Z0-9]+@outlook\.co|[a-zA-Z0-9]+@yahoo\.in"title="all characters are accepted">
+                <br>
+                <label for="photo">Photo:</label>
+                <input type="file"name="file"accept=".pdf,.docx"required>
+
+            
+        </fieldset>
+        <fieldset>
+            <h2><b>Residential Address Details</b></h2>
+            <label for="Applicant Address">Applicant Address:</label>
+            <textarea name="Applicant Address"spellcheck="false"required style=" width:180px;height:50px" pattern="[a-zA-Z0-9!@#$%^&*\s]+"title="multiple characters are accepted"></textarea>
+            <br>
+            <br>
+            <label for="District">District:</label>
+            <select id="district"name="district"required><option value="select"disabled select>select</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="guntur">guntur</option>
+            </select>
+            <br>
+            <label for="Mandal">Mandal</label>
+            <select id="Mandal"name="Mandal"required>
+                <option value="select"disabled select>select</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="guntur">guntur</option>
+            </select>
+            <br>
+            <label for="Village">Village</label>
+            <select id="Village"name="Village"required>
+                <option value="select"disabled select>select</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="amaravathi">amaravathi</option>
+            </select>
+            <br>
+            <label for="Pincode">Pincode</label>
+            <input type="text"name="pincode"required pattern="[0-9]{6,6}"title="multiple numbers b-w 0-9">
+
+        </fieldset>
+        <fieldset>
+            <h2>
+                <b>
+                    Pass Type Details
+                </b>
+            </h2>
+            <label for="city">City</label>
+            <select id="city"name="city"required>
+                <option value="select"disabled select>select</option>
+                <option value="Hyderabad">Hyderabad</option>
+            </select>
+            <br>
+            <label for="Pass Type"name="Pass Type"required>pass type</label>
+                <select id="Pass type"name="Pass Type">
+               <option value="select"disabled select>select</option>
+               <option value="greater pass">Greater pass</option>
+               <option value="General ordinaryroute pass">General ordinary route pass</option>
+               <option value="general metro pass">General metro pass</option>
+               <option value="metro express pass">metro express pass</option>
+                </select>
+            
+
+        </fieldset>
+        <fieldset>
+            <h2>
+                <b>Mode of Payment&Pass collection</b>
+            </h2>
+            <label for="payment mode" name="payment mode">payment mode</label>
+                <select id="payment mode"name="payment mode">
+                    <option value="select"disabled select>select payment mode</option>
+                    <option value="debit card">debit card</option>
+                    <option value="credit card">credit card</option>
+                </select>
+            
+            <br>
+            <label for="Pass delivery mode">Pass delivery Mode:</label>
+            <select id="Pass delivery mode"name="Pass delivery mode">
+                <option value="select">
+                    select delivery mode
+                </option>
+            </select>
+            <br>
+            <label for="center at which you want to collect pass">center at which you want to collect pass:</label>
+            <select id="center at which you want to collect pass"name="center at which you want to collect pass">
+                <option value="select"disabled select>select</option>
+                <option value="Rtc MGBS HYD">RTC MGBS HYD<optiont>
+                <option value="Rtc ABIDAS-HYD">RTC ABIDAS-HYD</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <center>
+                <img src="./i.png"alt width="40">
+            </center>
+            <center>
+            <input type="text"id="captcha"required name="captcha"pattern="CAPTCHA"></center>
+            <br>
+            <center>
+                <br>
+                <center>
+                    <input type="text"name="password"pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@!#$%^&]).{8,16}"placeholder="password"title="multiple characters,length 8 to 16 "required>
+                </center>
+            <input type="submit"value="submit">
+        </center>
+            
+        </fieldset>
+
+
+
+    </form>
+    < </body>
+
+</html>
